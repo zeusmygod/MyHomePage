@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-[16%] h-full p-5 bg-gray-300">
+      <div class="relative flex flex-col gap-10">
+        <section class="mt-10 w-full flex flex-col gap-4 items-center">
+          <img
+            src="photo.jpg"
+            alt="內心凋零的小男孩大頭貼帥照"
+            class="w-20 h-auto rounded-full"
+          />
+          <h2 class="font-bold text-xl text-center">內心凋零的小男孩<br>Roywei</h2>
+          <ul class="flex flex-row gap-4">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100012490876380&mibextid=LQQJ4d">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/roywei.03.04">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/zeusmygod">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="p-4">
+          <ul class="ml-[8%] flex flex-col gap-8">
+            <li>
+              <a href="#home"><i class="fa-solid fa-home mr-4"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-user mr-4"></i> About</a>
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-phone mr-4"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="relative left-[16%] w-[84%] h-screen">
+      <section id="home" class="flex justify-center h-screen">
+        <img
+          src="bg.jpg"
+          alt="背景圖片"
+          class="w-full h-auto object-cover object-center"
+        />
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <div class="relative w-full flex flex-col items-center gap-2">
+            <h1 class="text-white text-5xl font-bold">內心凋零的小男孩</h1>
+            <p class="text-white text-2xl">Don’t compare your life with others. There’s no comparison between the sun and the moon. They shine when it’s their time.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- The place you can add your code, with content and your style -->
+      <!-- <section id="about" class="mt-4 mx-10">
+        <h1>About</h1>
+      </section>
+
+      <section id="contact" class="mt-4 mx-10">
+        <h1>Contact</h1>
+      </section> -->
+      <section id="about" class="mt-4 mx-10">
+        <h2 class="text-2xl font-bold mb-5">About</h2>
+
+        <p class="mb-5 text-md ml-20">
+          我是一個<strong>內心凋零的</strong>小男孩，喜歡寫程式，喜歡寫程式，喜歡寫程式，重要的事情說三次。<br />
+          我也喜歡學習新技術，並且熱衷於分享我的知識。
+        </p>
+
+        <div class="w-full flex flex-row justify-evenly">
+          <table class="w-1/4 bg-white shadow-md rounded-lg overflow-hidden">
+            <thead class="bg-gray-200">
+              <tr>
+                <th class="py-2 px-4">項目</th>
+                <th class="py-2 px-4">內容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="px-4 border text-center">年齡</td>
+                <td class="px-4 border text-center">20</td>
+              </tr>
+              <tr>
+                <td class="px-4 border text-center">經歷</td>
+                <td class="px-4 border text-center">TSMC internship<br>Trend Micro</td>
+              </tr>
+              <tr>
+                <td class="px-4 border text-center">愛好</td>
+                <td class="px-4 border text-center">游泳, 旅行, 系統設計</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mwSq9dhpn8Y?si=R1SFtiNWfjh6Bo3M"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-4 mx-10">
+        <h2 class="text-2xl font-bold mb-5">Contact</h2>
+        <div class="flex flex-row justify-center items-center mb-4">
+          <div class="w-1/2 bg-white shadow-md rounded-lg p-6 mr-5">
+            <h2 class="text-xl font-bold mb-4">聯絡我</h2>
+            <p class="text-gray-700 text-sm">
+              如果你有任何問題，歡迎與我聯絡，我會盡快回覆你的訊息。
+            </p>
+            <hr class="my-4" />
+            <p class="text-gray-700 text-sm">
+              你也可以透過以下方式與我聯絡：
+            </p>
+            <ul class="list-disc list-inside text-gray-700 text-sm">
+              <li>
+                電子郵件：
+                <a href="mailto:roywei2015@gmail.com" class="text-blue-500"
+                  >roywei2015@gmail.com</a
+                >
+              </li>
+              <li>電話：+886 981820304</li>
+              <!-- <li>地址：1234 Example St, City, Country</li> -->
+            </ul>
+            <form class="mt-4 flex flex-col space-y-2 max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="姓名"
+                class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              />
+              <textarea
+                placeholder="訊息"
+                class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-300 h-32 resize-none"
+              ></textarea>
+              <a
+                href="#"
+                class="bg-cyan-600 text-black shadow-lg rounded-xl w-full h-auto py-3 flex items-center justify-center text-sm font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
+                >傳送</a
+              >
+            </form>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3226851986033!2d121.5483201!3d25.023121000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa2e274bace3%3A0x47e6e848f1e63828!2z6Lao5Yui56eR5oqAIFRyZW5kIE1pY3JvIOiCoeS7veaciemZkOWFrOWPuA!5e0!3m2!1szh-TW!2stw!4v1727965685725!5m2!1szh-TW!2stw" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
